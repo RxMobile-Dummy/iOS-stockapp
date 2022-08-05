@@ -22,8 +22,20 @@
 		D601D06C289BC3FB00F90C13 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D601D067289BC3FB00F90C13 /* Raleway-Medium.ttf */; };
 		D601D06D289BC3FB00F90C13 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D601D068289BC3FB00F90C13 /* Raleway-Regular.ttf */; };
 		D601D06E289BC3FB00F90C13 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D601D069289BC3FB00F90C13 /* Raleway-Bold.ttf */; };
-		D601D073289BC43200F90C13 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601D072289BC43200F90C13 /* Models.swift */; };
-		D601D075289BC44600F90C13 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D601D074289BC44600F90C13 /* HomeView.swift */; };
+		D67DEC01289BE11F00BE3795 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC00289BE11F00BE3795 /* NetworkManager.swift */; };
+		D67DEC04289BE27400BE3795 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC03289BE27400BE3795 /* Enum.swift */; };
+		D67DEC06289BE56300BE3795 /* GlobalQuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC05289BE56300BE3795 /* GlobalQuoteModel.swift */; };
+		D67DEC08289BE6AE00BE3795 /* QuoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC07289BE6AE00BE3795 /* QuoteModel.swift */; };
+		D67DEC0B289BE78700BE3795 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC0A289BE78700BE3795 /* APIHandler.swift */; };
+		D67DEC15289BEABB00BE3795 /* QuoteManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC14289BEABB00BE3795 /* QuoteManagerProtocol.swift */; };
+		D67DEC17289BEB7C00BE3795 /* StockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC16289BEB7C00BE3795 /* StockQuoteManager.swift */; };
+		D67DEC19289BF0AD00BE3795 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC18289BF0AD00BE3795 /* HeaderView.swift */; };
+		D67DEC1C289BF4A900BE3795 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC1B289BF4A900BE3795 /* CustomTextField.swift */; };
+		D67DEC1E289BF5CA00BE3795 /* SearchTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC1D289BF5CA00BE3795 /* SearchTextView.swift */; };
+		D67DEC20289BF6FE00BE3795 /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC1F289BF6FE00BE3795 /* QuoteCell.swift */; };
+		D67DEC22289BF81900BE3795 /* MiniQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC21289BF81900BE3795 /* MiniQuoteView.swift */; };
+		D67DEC25289C0DD600BE3795 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC24289C0DD600BE3795 /* UserDefaultsManager.swift */; };
+		D67DEC27289C162200BE3795 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67DEC26289C162200BE3795 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +74,20 @@
 		D601D067289BC3FB00F90C13 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
 		D601D068289BC3FB00F90C13 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		D601D069289BC3FB00F90C13 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
-		D601D072289BC43200F90C13 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		D601D074289BC44600F90C13 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D67DEC00289BE11F00BE3795 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D67DEC03289BE27400BE3795 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		D67DEC05289BE56300BE3795 /* GlobalQuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalQuoteModel.swift; sourceTree = "<group>"; };
+		D67DEC07289BE6AE00BE3795 /* QuoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteModel.swift; sourceTree = "<group>"; };
+		D67DEC0A289BE78700BE3795 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		D67DEC14289BEABB00BE3795 /* QuoteManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManagerProtocol.swift; sourceTree = "<group>"; };
+		D67DEC16289BEB7C00BE3795 /* StockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockQuoteManager.swift; sourceTree = "<group>"; };
+		D67DEC18289BF0AD00BE3795 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D67DEC1B289BF4A900BE3795 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		D67DEC1D289BF5CA00BE3795 /* SearchTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextView.swift; sourceTree = "<group>"; };
+		D67DEC1F289BF6FE00BE3795 /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		D67DEC21289BF81900BE3795 /* MiniQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQuoteView.swift; sourceTree = "<group>"; };
+		D67DEC24289C0DD600BE3795 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		D67DEC26289C162200BE3795 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +138,8 @@
 		D601D01A289BC15A00F90C13 /* StockApp */ = {
 			isa = PBXGroup;
 			children = (
+				D67DEBFC289BE0CE00BE3795 /* Services */,
 				D601D048289BC2A400F90C13 /* Features */,
-				D601D04A289BC2B600F90C13 /* Services */,
 				D601D049289BC2AF00F90C13 /* Helper */,
 				D601D01B289BC15A00F90C13 /* StockAppApp.swift */,
 				D601D01D289BC15A00F90C13 /* ContentView.swift */,
@@ -161,27 +185,14 @@
 		D601D049289BC2AF00F90C13 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D67DEC1A289BF45800BE3795 /* CommonClass */,
+				D67DEC02289BE26500BE3795 /* Enum */,
 				D601D050289BC2FE00F90C13 /* Constant */,
 				D601D04F289BC2F800F90C13 /* Config */,
 				D601D04E289BC2F000F90C13 /* Utility */,
 				D601D04C289BC2E000F90C13 /* Font */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		D601D04A289BC2B600F90C13 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				D601D04B289BC2CD00F90C13 /* NetworkManager */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		D601D04B289BC2CD00F90C13 /* NetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		D601D04C289BC2E000F90C13 /* Font */ = {
@@ -223,6 +234,7 @@
 		D601D06F289BC40E00F90C13 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				D67DEC12289BEA8400BE3795 /* Managers */,
 				D601D071289BC41C00F90C13 /* Views */,
 				D601D070289BC41500F90C13 /* Models */,
 			);
@@ -232,7 +244,8 @@
 		D601D070289BC41500F90C13 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D601D072289BC43200F90C13 /* Models.swift */,
+				D67DEC05289BE56300BE3795 /* GlobalQuoteModel.swift */,
+				D67DEC07289BE6AE00BE3795 /* QuoteModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,9 +253,80 @@
 		D601D071289BC41C00F90C13 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D601D074289BC44600F90C13 /* HomeView.swift */,
+				D67DEC18289BF0AD00BE3795 /* HeaderView.swift */,
+				D67DEC1D289BF5CA00BE3795 /* SearchTextView.swift */,
+				D67DEC1F289BF6FE00BE3795 /* QuoteCell.swift */,
+				D67DEC21289BF81900BE3795 /* MiniQuoteView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D67DEBFC289BE0CE00BE3795 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC23289C0DB800BE3795 /* UserDefaultsManager */,
+				D67DEC09289BE76400BE3795 /* CommonAPI */,
+				D67DEBFF289BE10A00BE3795 /* NetworkManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D67DEBFF289BE10A00BE3795 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC00289BE11F00BE3795 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D67DEC02289BE26500BE3795 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC03289BE27400BE3795 /* Enum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		D67DEC09289BE76400BE3795 /* CommonAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC0A289BE78700BE3795 /* APIHandler.swift */,
+			);
+			path = CommonAPI;
+			sourceTree = "<group>";
+		};
+		D67DEC12289BEA8400BE3795 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC13289BEA9C00BE3795 /* Protocol */,
+				D67DEC16289BEB7C00BE3795 /* StockQuoteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D67DEC13289BEA9C00BE3795 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC14289BEABB00BE3795 /* QuoteManagerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D67DEC1A289BF45800BE3795 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC1B289BF4A900BE3795 /* CustomTextField.swift */,
+				D67DEC26289C162200BE3795 /* LoadingView.swift */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		D67DEC23289C0DB800BE3795 /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				D67DEC24289C0DD600BE3795 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,13 +464,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67DEC08289BE6AE00BE3795 /* QuoteModel.swift in Sources */,
+				D67DEC22289BF81900BE3795 /* MiniQuoteView.swift in Sources */,
 				D601D058289BC38E00F90C13 /* Utility.swift in Sources */,
 				D601D01E289BC15A00F90C13 /* ContentView.swift in Sources */,
+				D67DEC25289C0DD600BE3795 /* UserDefaultsManager.swift in Sources */,
+				D67DEC1C289BF4A900BE3795 /* CustomTextField.swift in Sources */,
 				D601D056289BC37800F90C13 /* Config.swift in Sources */,
+				D67DEC17289BEB7C00BE3795 /* StockQuoteManager.swift in Sources */,
+				D67DEC0B289BE78700BE3795 /* APIHandler.swift in Sources */,
 				D601D01C289BC15A00F90C13 /* StockAppApp.swift in Sources */,
-				D601D075289BC44600F90C13 /* HomeView.swift in Sources */,
+				D67DEC01289BE11F00BE3795 /* NetworkManager.swift in Sources */,
+				D67DEC04289BE27400BE3795 /* Enum.swift in Sources */,
+				D67DEC27289C162200BE3795 /* LoadingView.swift in Sources */,
+				D67DEC19289BF0AD00BE3795 /* HeaderView.swift in Sources */,
+				D67DEC20289BF6FE00BE3795 /* QuoteCell.swift in Sources */,
+				D67DEC15289BEABB00BE3795 /* QuoteManagerProtocol.swift in Sources */,
+				D67DEC1E289BF5CA00BE3795 /* SearchTextView.swift in Sources */,
 				D601D052289BC31300F90C13 /* Constant.swift in Sources */,
-				D601D073289BC43200F90C13 /* Models.swift in Sources */,
+				D67DEC06289BE56300BE3795 /* GlobalQuoteModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +648,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -581,6 +678,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

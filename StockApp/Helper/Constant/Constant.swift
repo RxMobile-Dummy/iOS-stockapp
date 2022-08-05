@@ -6,28 +6,32 @@
 //
 
 import Foundation
-//MARK: - Main URL
+import UIKit
 
-//MARK: - API URL
+//MARK: - Main URL
+let kBASEURL  = "https://www.alphavantage.co/query?"
+
+//MARK: - DateFormat
+let kMMM_dd = "MMM dd"
+
+//MARK: - ImageName
+let kPLUS = "plus"
+let kMAGNIFYING_GLASS   = "magnifyingglass"
 
 //MARK: - API Key
+let kAPIKEY = "413AYOAI690436HJ"
+let kSYMBOL_KEY  = "SYMBOL_KEY"
 
-//MARK: - View Controller Identifier Name
-
-//MARK: - ViewController Title
-
-//MARK: - Button Title
-
-//MARK: - Lable Title
-
-//MARK: - Textfield PlaceHolder
-
-//MARK: - Validation Message
-
-//MARK: - Image Name
-
-//MARK: - Error Handle
-
-//MARK: - API Parameters
+//MARK: - Label String
+let kSEARCH = "Search"
 
 //MARK: - UserDefault
+let kUSERDEFAULT = UserDefaults.standard
+
+//MARK: - Device Height And Width
+let Device_MainHeight = UIScreen.main.bounds.size.height
+let Device_MainWidth = UIScreen.main.bounds.size.width
+
+
+
+
