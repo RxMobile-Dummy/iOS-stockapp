@@ -19,3 +19,4 @@ enum SymbolFunction : String{
   case search = "SYMBOL_SEARCH"
   case quote = "GLOBAL_QUOTE"
 }
+
