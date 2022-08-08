@@ -10,6 +10,7 @@ import UIKit
 
 //MARK: - Main URL
 let kBASEURL  = "https://www.alphavantage.co/query?"
+let kNEWSURL = "https://newsapi.org/v2/top-headlines?"
 
 //MARK: - DateFormat
 let kMMM_dd = "MMM dd"
@@ -20,6 +21,7 @@ let kMAGNIFYING_GLASS   = "magnifyingglass"
 
 //MARK: - API Key
 let kAPIKEY = "413AYOAI690436HJ"
+let kNEWSKEY = "c04666855a034179b075bce26a9a540f"
 let kSYMBOL_KEY  = "SYMBOL_KEY"
 
 //MARK: - Label String

@@ -50,7 +50,7 @@ struct HeaderView: View {
       } content: {
         Text("Search view will go here")
       }
-    }.background(Color.black)
+    }
   }
 }
 

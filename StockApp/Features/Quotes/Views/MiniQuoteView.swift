@@ -22,8 +22,10 @@ struct MiniQuoteView: View {
             Text(quote.symbol)
               .font(.subheadline)
               .bold()
+
             Text(quote.price)
               .font(.subheadline)
+            
             Text(quote.change)
               .font(.subheadline)
               .padding(.horizontal)
@@ -34,8 +36,8 @@ struct MiniQuoteView: View {
         }
       }
     }.onAppear {
-      stockQuotes.getQuotesData(stocks: []) { _  in
-      }
+//      stockQuotes.getQuotesData(stocks: []) { _  in
+//      }
     }
   }
 }
