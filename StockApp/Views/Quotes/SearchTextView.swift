@@ -12,11 +12,16 @@ struct SearchTextView: View {
   /// MARK: - Views Variables
   /// stocks bind of SearchTextView object of String
   @Binding var searchTerm : String
+
+  /// editingChanged method of type Bool
+  var editingChanged : (Bool) -> Void = { _ in}
+  /// onCommit method of text
+  var commit : () -> Void = {}
   
   //MARK: - Body View
   var body: some View {
     /// Custom Textfield Method
-    CustomTextField(placeHolder: Text(kSEARCH).foregroundColor(Color.gray), text: $searchTerm)
+    CustomTextField(placeHolder: Text(kSEARCH).foregroundColor(Color.gray), text: $searchTerm , editingChanged: editingChanged , commit: commit)
       .foregroundColor(.white)
       .padding(.leading,40)
       .frame(height:50)

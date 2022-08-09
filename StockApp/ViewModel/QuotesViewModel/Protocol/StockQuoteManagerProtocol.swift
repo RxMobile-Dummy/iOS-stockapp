@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol  QuoteManagerProtocol{
+protocol  StockQuoteManagerProtocol{
   /// quotes object of [Quote] array
   var quotes : [Quote] {get set}
   /// getQuotesData method

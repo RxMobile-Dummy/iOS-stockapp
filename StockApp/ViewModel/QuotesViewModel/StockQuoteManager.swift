@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class StockQuoteManager : QuoteManagerProtocol , ObservableObject {
+final class StockQuoteManager : StockQuoteManagerProtocol , ObservableObject {
 
   ///  quotes object of array of Quote
   @Published var quotes: [Quote] = []
@@ -22,19 +22,24 @@ final class StockQuoteManager : QuoteManagerProtocol , ObservableObject {
     let downloadQueue = DispatchQueue(label: "com.stockapp.StockApp")
     let downloadGroup = DispatchGroup()
 
-    downloadGroup.enter()
-    let url = URL(string: APIHandler.quoteUrl(searchKey: ""))
-    /// FetchData of NetworkManager 
-    NetworkManager<GlobalQuoteResponse>().fetchData(from: url!) { result in
-      switch result {
-      case .failure(_):
-        downloadQueue.async {
-          downloadGroup.leave()
-        }
-      case .success(let response):
-        downloadQueue.async {
-          internalQuotes.append(response.quote)
-          downloadGroup.leave()
+    stocks.forEach { stock in
+      downloadGroup.enter()
+      let url = URL(string: APIHandler.quoteUrl(for: stock))
+      print("URL...\(url!)")
+      /// FetchData of NetworkManager
+      NetworkManager<GlobalQuoteResponse>().fetchData(from: url!) { result in
+        print("URL...\(url!)")
+        switch result {
+        case .failure(let error):
+          print(error)
+          downloadQueue.async {
+            downloadGroup.leave()
+          }
+        case .success(let response):
+          downloadQueue.async {
+            internalQuotes.append(response.quote)
+            downloadGroup.leave()
+          }
         }
       }
     }

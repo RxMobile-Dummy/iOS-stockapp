@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import BetterSafariView
+//import BetterSafariView
 
 struct NewsListView: View {
 
@@ -39,11 +39,13 @@ struct NewsListView: View {
             .contentShape(Rectangle())
             .onTapGesture {
               selectedArticle = article
-              showOnSafari.toggle()
-            }.sheet(isPresented: $showOnSafari) {
-              loadNews(for: selectedArticle ?? article)
+              UIApplication.shared.open(URL(string: article.url.replacingOccurrences(of: "http://", with: "https://"))!)
+              //showOnSafari.toggle()
             }
-            
+            //            .sheet(isPresented: $showOnSafari) {
+            //
+            //              // loadNews(for: selectedArticle ?? article)
+            //            }
             RoundedRectangle(cornerRadius: 10).fill(Color.white.opacity(0.2))
               .padding(.horizontal , 50)
               .frame(height: 1)
@@ -53,9 +55,9 @@ struct NewsListView: View {
     }
   }
 
-  private func loadNews(for article : News) -> some View {
-    return SafariView(url :URL(string: article.url.replacingOccurrences(of: "http://", with: "https://"))!)
-  }
+  //  private func loadNews(for article : News) -> some View {
+  //    return SafariView(url :URL(string: article.url.replacingOccurrences(of: "http://", with: "https://"))!)
+  //  }
 
 }
 

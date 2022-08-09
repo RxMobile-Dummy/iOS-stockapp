@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
-
+  
   /// MARK: - Views Variables
   /// dateFormatter object DateFormatter
   private let dateFormatter : DateFormatter = {
@@ -16,13 +16,13 @@ struct HeaderView: View {
     formatter.dateFormat = kMMM_dd
     return formatter
   }()
-
+  
   /// stocks bind of headerview object of String Array
   @Binding var stocks : [String]
-
+  
   /// showSearch object of Bool
   @State private var showSearch = false
-
+  
   //MARK: - Body View
   var body: some View {
     HStack {
@@ -30,15 +30,15 @@ struct HeaderView: View {
         Text("Stocks")
           .foregroundColor(.white)
           .bold()
-
+        
         Text("\(Date(), formatter:  dateFormatter)")
           .foregroundColor(.gray)
           .bold()
-
+        
       }.font(.title)
-
+      
       Spacer()
-
+      
       Button{
         showSearch.toggle()
       } label: {
@@ -46,9 +46,9 @@ struct HeaderView: View {
           .font(.title)
           .foregroundColor(.white)
       }.sheet(isPresented: $showSearch) {
-
+        self.stocks = UserDefaultManager.shared.savedSymbols
       } content: {
-        Text("Search view will go here")
+        SearchView()
       }
     }
   }
