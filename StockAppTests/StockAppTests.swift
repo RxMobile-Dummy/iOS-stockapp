@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import StockApp
 
 class StockAppTests: XCTestCase {
 

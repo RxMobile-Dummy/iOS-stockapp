@@ -66,6 +66,7 @@ struct ContentView: View {
             /// List of Quotes Method
             ForEach(getQuotes()){ quote in
               QuoteCell(quote: quote)
+                .padding(.top , 10)
             }
           }.listRowBackground(Color.clear)
             .listRowInsets(EdgeInsets())
@@ -74,7 +75,8 @@ struct ContentView: View {
           fetchData(for: stocks)
           oldStocks = stocks
         }.onChange(of: stocks) { newValue in
-          
+          fetchData(for: stocks.difference(from: oldStocks))
+          oldStocks = stocks
         }.listStyle(PlainListStyle())
           .foregroundColor(.white)
       }.padding(.horizontal , 16)

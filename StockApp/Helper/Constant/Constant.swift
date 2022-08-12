@@ -18,6 +18,10 @@ let kMMM_dd = "MMM dd"
 //MARK: - ImageName
 let kPLUS = "plus"
 let kMAGNIFYING_GLASS   = "magnifyingglass"
+let kARROW_LEFT = "arrow.left"
+let kCHECKMARK_CIRCLE  = "checkmark.circle"
+let kPLUS_CIRCLE_FILL = "plus.circle.fill"
+let kIMG_SPLASH    = "img_splash"
 
 //MARK: - API Key
 let kAPIKEY = "413AYOAI690436HJ"
@@ -26,6 +30,10 @@ let kSYMBOL_KEY  = "SYMBOL_KEY"
 
 //MARK: - Label String
 let kSEARCH = "Search"
+let kDONE = "Done"
+let kNO_DATA_AVAILABLE    = "No Data Available"
+let kWELCOME_TO  = "WELCOME TO"
+let kSTOCKS    = "STOCKS"
 
 //MARK: - UserDefault
 let kUSERDEFAULT = UserDefaults.standard

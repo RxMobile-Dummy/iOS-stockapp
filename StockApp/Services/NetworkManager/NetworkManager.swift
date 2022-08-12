@@ -33,7 +33,9 @@ final class NetworkManager<T : Codable> {
       }
 
       do {
-        let json = try JSONDecoder().decode(T.self , from : data)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .useDefaultKeys
+        let json = try decoder.decode(T.self, from: data)
         completion(.success(json))
       } catch let err {
         completion(.failure(.decodingError(err: err.localizedDescription)))

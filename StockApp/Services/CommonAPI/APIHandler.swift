@@ -27,7 +27,7 @@ struct APIHandler {
    - Parameter searchKey: Object of String
    - Return String
    */
-  static func quoteUrl(searchKey : String?) -> String {
+  static func quoteUrl(for searchKey : String) -> String {
     return urlBy(symbol: .quote, searchKey: searchKey)
   }
 
@@ -40,9 +40,9 @@ struct APIHandler {
   private static func urlBy(symbol : SymbolFunction , searchKey : String? = "") -> String {
     switch symbol {
     case .search :
-      return "\(baseURL)function=\(symbol.rawValue)&apikey=\(kAPIKEY)&keywords=\(searchKey!)"
+      return "\(baseURL)function=\(symbol.rawValue)&keywords=\(searchKey ?? "")&apikey=\(kAPIKEY)"
     case .quote :
-      return "\(baseURL)function=\(symbol.rawValue)&symbol=IBM&apikey=\(kAPIKEY)"
+      return "\(baseURL)function=\(symbol.rawValue)&symbol=\(searchKey ?? "")&apikey=\(kAPIKEY)"
     }
   }
 }
